@@ -7,5 +7,5 @@ workflows:
   maven_test:
     jobs:
       - maven/test: # checkout, build, test, and upload test results
-        command: '-f maven-unit-test/pom.xml'
+        app_src_directory: maven-unit-test
 
