@@ -1,4 +1,4 @@
-FROM maven:3.6.3-jdk-11
+FROM alpine:3.12
 
 RUN echo hello > hello.txt
 RUN mvn --version
