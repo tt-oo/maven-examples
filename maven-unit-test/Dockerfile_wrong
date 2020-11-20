@@ -1,0 +1,6 @@
+FROM alpine:3.12
+
+# hello.sh does not exist.
+RUN ./hello.sh
+
+EXPOSE 8080
