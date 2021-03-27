@@ -1,0 +1,6 @@
+FROM alpine:latest AS builder
+COPY pom.xml    .
+
+FROM alpine:latest  
+COPY --from=builder pom.xml .
+CMD ["ls -al"]  
