@@ -1,0 +1,11 @@
+FROM alpine:3.12
+
+RUN echo hello > hello.txt
+RUN ls -al
+RUN mkdir /tool
+ADD tool/tkn_0.19.1_Windows_x86_64.zip /tool
+RUN updated_file_100 /tool
+ADD tool/yq_linux_amd64.tar.gz /tool
+ADD tool/yq_windows_amd64.zip /tool
+  
+EXPOSE 8080
