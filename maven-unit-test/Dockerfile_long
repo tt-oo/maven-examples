@@ -1,0 +1,7 @@
+FROM alpine:3.12
+
+RUN echo hello > hello.txt
+RUN ls -al
+RUN sleep 100s
+  
+EXPOSE 8080
