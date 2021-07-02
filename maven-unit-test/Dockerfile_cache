@@ -1,7 +1,7 @@
 FROM centos:centos8
 
-RUN yum update -y && \
-    yum install -y curl
+RUN yum  update && \
+    yum -y install curl
 RUN echo hello > hello.txt
 RUN ls -al
 RUN mkdir /tools
