@@ -1,6 +1,6 @@
 FROM centos:centos8
 
-RUN yum  update && \
+RUN yum  -y update && \
     yum -y install curl
 RUN echo hello > hello.txt
 RUN ls -al
