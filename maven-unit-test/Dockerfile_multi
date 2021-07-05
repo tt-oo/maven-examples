@@ -3,4 +3,4 @@ COPY pom.xml    .
 
 FROM alpine:latest  
 COPY --from=builder pom.xml .
-CMD ["ls -al"]  
+CMD ["ls", "-al"]  
