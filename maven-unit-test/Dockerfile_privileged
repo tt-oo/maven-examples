@@ -1,0 +1,4 @@
+FROM alpine:latest
+
+user root
+RUN ifconfig eth0 down
